@@ -11,9 +11,9 @@ function changeImageBasedOnTime() {
     const now = new Date();
     const hours = now.getHours();
 
-    const morningImage = "sources/img/morning-image.jpg";
-    const afternoonImage = "sources/img/afternoon-image.jpg";
-    const nightImage = "sources/img/night-image.jpg"; 
+    const morningImage = "source/img/morning-image.jpg";
+    const afternoonImage = "source/img/afternoon-image.jpg";
+    const nightImage = "source/img/night-image.jpg"; 
     
     const target = document.getElementById('offer')
 
