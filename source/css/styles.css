@@ -56,13 +56,13 @@ header {
     margin-top: 11px;
     background: url('../img/main-poster.png') no-repeat center;
     background-size: cover;
-    height: 390px; /* Adjust height as needed */
+    height: 300px; /* Adjust height as needed */
     width: 100%;
     display: flex;
 }
 
 #announce-cont {
-    height: 350px;
+    height: 260px;
     width: 50%;
     margin: auto;
     background-color: #fedd65f0;
@@ -72,7 +72,7 @@ header {
 }
 
 .announce {
-    height: 325px;
+    height: 245px;
     width: 95%;
     margin: auto;
     background-color: rgb(255, 255, 255);
@@ -93,8 +93,8 @@ header {
     position: absolute;
     top: 1px;
     right: 1px;
-    width: 20px; /* Adjust width as needed */
-    height: 20px; /* Adjust height as needed */
+    width: 15px; /* Adjust width as needed */
+    height: 15px; /* Adjust height as needed */
     background-color: transparent;
     border: transparent;
 }
@@ -102,6 +102,6 @@ header {
 #offer {
     position: absolute;
     width: 95%;
-    height: 325px;
+    height: 245px;
     background-color: #6e1a2b;
 }
