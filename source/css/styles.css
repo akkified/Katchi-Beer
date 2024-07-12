@@ -1,12 +1,17 @@
 @font-face {
-    font-family: plexmono;
-    src: url(../fonts/IBMPlexMono-Bold.ttf);
+    font-family: karma;
+    src: url(../fonts/Karma/Karma-Regular.ttf);
 }
+@font-face {
+    font-family: plexmono;
+    src: url(../fonts/IBM_Plex_Mono/IBMPlexMono-Bold.ttf);
+}
+
 
 body {
     background-color: #ecd4ac;
     margin: 0;
-    font-family: plexmono, sans-serif;
+    font-family: karma, sans-serif;
 }
 
 header {
