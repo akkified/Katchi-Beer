@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #6e1a2b;
+    background-color: #a63027;
     color: #ecd4ac;
     padding: 20px;
     text-align: center;
@@ -18,8 +18,8 @@ header {
 }
 
 .navbar-default {
-    background-color: #6e1a2b;
-    border-color: #6e1a2b;
+    background-color: #a63027;
+    border-color: #a63027;
 }
 
 .navbar-default .navbar-brand,
@@ -32,8 +32,8 @@ header {
 }
 
 .navbar-default .navbar-nav > li > a.order-button {
-    background-color: #fede65;
-    color: #6e1a2b; /* Changed text color to red */
+    background-color: #c04b2d;
+    color: #a63027; /* Changed text color to red */
     height: 35px;
     width: 125px;
     padding-top: 7px;
@@ -41,6 +41,7 @@ header {
     text-decoration: none;
     font-size: 18px;
     border-radius: 360px;
+    outline: #c05d31;
 }
 .order-button {
     margin-top: 7px;
@@ -49,7 +50,7 @@ header {
 .navbar-default .navbar-nav > li > a.order-button:hover {
     text-decoration: none;
     background-color: #e7c857;
-    color: #6e1a2b; /* Changed text color to red */
+    color: #a63027; /* Changed text color to red */
 }
 
 .pattern {
@@ -103,5 +104,5 @@ header {
     position: absolute;
     width: 95%;
     height: 245px;
-    background-color: #6e1a2b;
+    background-color: #a63027;
 }
