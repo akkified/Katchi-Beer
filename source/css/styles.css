@@ -14,7 +14,7 @@ header {
     color: #ecd4ac;
     padding: 20px;
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
 }
 
 .navbar-default {
@@ -33,18 +33,18 @@ header {
 
 .navbar-default .navbar-nav > li > a.order-button {
     background-color: #c04b2d;
-    color: #a63027; /* Changed text color to red */
-    height: 35px;
+    color: #edae7c; /* Changed text color to red */
+    height: 30px;
     width: 125px;
     padding-top: 7px;
     padding-left: 15px;
     text-decoration: none;
     font-size: 18px;
     border-radius: 360px;
-    outline: #c05d31;
+    border: 2px solid #bb5530;
 }
 .order-button {
-    margin-top: 7px;
+    margin-top: 9px;
 }
 
 .navbar-default .navbar-nav > li > a.order-button:hover {
