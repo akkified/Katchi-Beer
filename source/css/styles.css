@@ -41,16 +41,17 @@ header {
     text-decoration: none;
     font-size: 18px;
     border-radius: 360px;
-    border: 2px solid #bb5530;
+    border: 3px solid #e0974e;
 }
 .order-button {
-    margin-top: 9px;
+    margin-top: 6px;
 }
 
 .navbar-default .navbar-nav > li > a.order-button:hover {
     text-decoration: none;
-    background-color: #e7c857;
-    color: #a63027; /* Changed text color to red */
+    background-color: #e0974e;
+    border: 3px solid #c04b2d;
+    color: #edae7c; /* Changed text color to red */
 }
 
 .pattern {
