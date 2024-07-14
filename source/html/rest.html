@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head starts here -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kutchi Beer - Restaurant Menu</title>
+    <!-- styles + bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- icon/logo -->
+    <link rel="icon" href="../img/logo/file.ico" type="image/x-icon">
+    <style>
+      body {
+        position: relative;
+      }
+      .sidebar {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        padding: 15px;
+        width: 200px;
+        background-color: #ecd4ac;
+        border-right: 1px solid #ecd4ac;
+        height: 100%;
+      }
+      .sidebar a {
+        display: block;
+        padding: 10px;
+        color: #000;
+        text-decoration: none;
+      }
+      .sidebar a:hover {
+        background-color: #ddd;
+      }
+      @media (max-width: 768px) {
+        .sidebar {
+          display: none;
+        }
+        main {
+          margin-left: 0;
+        }
+      }
+    </style>
+  </head>
+  <!-- Body starts here -->
+  <body data-spy="scroll" data-target=".sidebar" data-offset="70">
+    <header>
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="bar.html">Bar</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="bakery.html">Bakery</a></li>
+              <li><a href="tel:4707741985" class="order-button">Order</a></li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+    </header>
+
+    <div class="container-fluid">
+      <div class="row">
+        <nav class="col-sm-3 col-md-2 sidebar">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#breakfast">Breakfast</a></li>
+            <li><a href="#appetizer">Appetizer</a></li>
+            <li><a href="#lunch">Lunch</a></li>
+            <li><a href="#snack">Snack</a></li>
+            <li><a href="#dinner">Dinner</a></li>
+            <li><a href="#dosas">Dosas</a></li>
+            <li><a href="#chaat">Chaat</a></li>
+            <li><a href="#traditional-favorites">Traditional Favorites</a></li>
+            <li><a href="#fresh-veggies">Fresh Veggies</a></li>
+            <li><a href="#paneer-pasand">Paneer Pasand</a></li>
+            <li><a href="#mushroom-lovers">Mushroom Lovers</a></li>
+            <li><a href="#kaju-ka-kamaal">Kaju Ka Kamaal</a></li>
+            <li><a href="#delicious-dals">Our Delicious Dals</a></li>
+          </ul>
+        </nav>
+
+        <main class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2">
+          <section id="breakfast">
+            <h2>Breakfast</h2>
+            <ul>
+              <li>Poori Bhaji - $5</li>
+              <li>Idli Sambar - $4</li>
+              <li>Aloo Paratha - $6</li>
+            </ul>
+          </section>
+
+          <section id="poha">
+            <h2>Poha</h2>
+            <ul>
+              <li>Indori Poha - $4</li>
+              <li>Kanda Poha - $4</li>
+              <li>Poha - $3</li>
+            </ul>
+          </section>
+
+          <section id="upma">
+            <h2>Upma</h2>
+            <ul>
+              <li>Shahi Upma - $5</li>
+              <li>Vegetable Upma - $4</li>
+              <li>Mater Upma - $4</li>
+            </ul>
+          </section>
+          
+          <section id="appetizer">
+            <h2>Appetizer</h2>
+            <ul>
+              <li>Paneer Tikka - $8</li>
+              <li>Vegetable Samosa - $5</li>
+              <li>Chilli Paneer - $7</li>
+              <li>Hakka Noodles - $9.99</li>
+              <li>Szechuan Hakka noodles - $9.99</li>
+              <li>Veg Spring Rolls (5) - $9.99</li>
+              <li>French Fries - $4.99</li>
+              <li>Crispy Chili Potatoes - $11.99</li>
+              <li>Crispy Chili Baby Corn - $11.99</li>
+              <li>Crispy Chili Paneer - $11.99</li>
+              <li>Gobhi Manchurian - $12.99</li>
+              <li>Veg Manchurian - $12.99</li>
+            </ul>
+          </section>
+
+          <section id="dhokla">
+            <h2>Dhokla</h2>
+            <ul>
+              <li>Khatta Dhokla - $5</li>
+              <li>Sandwich Dhokla - $6</li>
+              <li>Dhokla - $4</li>
+            </ul>
+          </section>
+
+          <section id="misal-pav">
+            <h2>Misal Pav</h2>
+            <ul>
+              <li>Misal Pav - $5</li>
+            </ul>
+          </section>
+
+          <section id="samosa">
+            <h2>Samosa</h2>
+            <ul>
+              <li>Samosa - $4</li>
+            </ul>
+          </section>
+
+          <section id="aaloo-paratha">
+            <h2>Aloo Paratha</h2>
+            <ul>
+              <li>Aloo Paratha - $6</li>
+            </ul>
+          </section>
+          
+          <section id="lunch">
+            <h2>Lunch</h2>
+            <ul>
+              <li>Vegetable Biryani - $10</li>
+              <li>Chole Bhature - $9</li>
+              <li>Palak Paneer - $11</li>
+            </ul>
+          </section>
+          
+          <section id="snack">
+            <h2>Snack</h2>
+            <ul>
+              <li>Pav Bhaji - $6</li>
+              <li>Aloo Tikki - $4</li>
+              <li>Pani Puri - $5</li>
+            </ul>
+          </section>
+          
+          <section id="dinner">
+            <h2>Dinner</h2>
+            <ul>
+              <li>Dal Makhani - $10</li>
+              <li>Butter Naan - $3</li>
+              <li>Mixed Vegetable Curry - $9</li>
+            </ul>
+          </section>
+
+          <section id="soup">
+            <h2>Soup</h2>
+            <ul>
+              <li>Sweet corn Soup - $4.99</li>
+              <li>Manchow Soup - $4.99</li>
+              <li>Hot and Sour Soup - $4.99</li>
+              <li>Tomato Soup - $4.99</li>
+            </ul>
+          </section>
+
+          <section id="sandwiches">
+            <h2>Sandwiches</h2>
+            <ul>
+              <li>Potato Sandwich - $5</li>
+              <li>Veg Sandwich - $6</li>
+              <li>Cheese Chutney Sandwich - $6</li>
+              <li>Cheese Jam Sandwich - $6</li>
+              <li>Bombay Grill Sandwich - $7</li>
+              <li>Paneer Sandwich - $7</li>
+            </ul>
+          </section>
+
+
+          <section id="dosas">
+            <h2>Dosas</h2>
+            <ul>
+              <li>Plain Dosa - $5</li>
+              <li>Masala Dosa - $6</li>
+              <li>Cheese Dosa - $6</li>
+              <li>Podi Dosa - $6</li>
+              <li>Onion Dosa - $7</li>
+              <li>Onion Podi Dosa - $7</li>
+            </ul>
+          </section>
+
+
+
+          <section id="chaat">
+            <h2>Chaat</h2>
+            <ul>
+              <li>Chole Chaat - $5</li>
+              <li>Kachori Chaat - $6</li>
+              <li>Samosa Chaat - $5</li>
+              <li>Peanut Chaat - $4</li>
+              <li>Bombay Chaat - $7</li>
+              <li>Pani Puri - $5</li>
+              <li>Dahi Puri - $6</li>
+              <li>Sev Puri - $5</li>
+              <li>Dahi Vada - $6</li>
+              <li>Bhel - $4</li>
+              <li>Sukhi Chaat - $5</li>
+              <li>Matki Bhel - $6</li>
+              <li>Corn Chaat - $4</li>
+              <li>Katori Chaat - $7</li>
+              <li>Papadi Chaat - $5</li>
+            </ul>
+          </section>
+
+          <section id="traditional-favorites">
+            <h2>Traditional Favorites</h2>
+            <ul>
+              <li>Chana Masala - $8</li>
+              <li>Alu Mutter - $7</li>
+              <li>Alu Gobi Mutter - $7</li>
+              <li>Bhendi Pyaaz - $8</li>
+              <li>Mix Veg (spicy) - $8</li>
+              <li>Kadhi Pakoda - $7</li>
+            </ul>
+          </section>
+
+          <section id="fresh-veggies">
+            <h2>Fresh Veggies</h2>
+            <ul>
+              <li>Veg Kolhapuri (spicy) - $9</li>
+              <li>Veg Kadai (spicy) - $9</li>
+              <li>Veg Diwani Handi - $8</li>
+              <li>Veg Makhanwala (sweet) - $8</li>
+              <li>Veg Jaipuri - $8</li>
+              <li>Veg Haryali - $8</li>
+            </ul>
+          </section>
+
+          <section id="paneer-pasand">
+            <h2>Paneer Pasand</h2>
+            <ul>
+              <li>Paneer Mutter - $9</li>
+              <li>Paneer Bhurji - $9</li>
+              <li>Paneer Palak - $9</li>
+              <li>Paneer Tikka Masala (spicy) - $10</li>
+              <li>Paneer Kadai (spicy) - $10</li>
+              <li>Paneer Lasuni (spicy) - $10</li>
+              <li>Paneer Makhanwala (sweet) - $9</li>
+              <li>Paneer Butter Masala (sweet) - $10</li>
+              <li>Malai Kofta (sweet) - $9</li>
+            </ul>
+          </section>
+
+          <section id="mushroom-lovers">
+            <h2>Mushroom Lovers</h2>
+            <ul>
+              <li>Mushroom Mutter - $8</li>
+              <li>Mushroom Paneer - $9</li>
+              <li>Mushroom Tikka (spicy) - $10</li>
+              <li>Mushroom Kadai (spicy) - $10</li>
+              <li>Mushroom Babycorn - $9</li>
+              <li>Mushroom Babycorn Paneer - $10</li>
+            </ul>
+          </section>
+
+          <section id="kaju-ka-kamaal">
+            <h2>Kaju Ka Kamaal</h2>
+            <ul>
+              <li>Kaju Paneer (spicy) - $11</li>
+              <li>Kaju Mutter - $10</li>
+              <li>Kaju Kurry (sweet) - $10</li>
+            </ul>
+          </section>
+
+          <section id="delicious-dals">
+            <h2>Our Delicious Dals</h2>
+            <ul>
+              <li>Dal Makhani - $8</li>
+              <li>Dal Fry - $7</li>
+              <li>Dal Tadka (spicy) - $8</li>
+              <li>Dal Lasooni Tadka (spicy) - $8</li>
+            </ul>
+          </section>
+
+        </main>
+      </div>
+    </div>
+
+    <!-- JS plugins and scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/ajax-utils.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>

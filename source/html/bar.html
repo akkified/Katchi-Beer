@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- Head starts here -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kutchi Beer - Bar Menu</title>
+    <!-- styles + bootstrap styles -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- icon/logo -->
+    <link rel="icon" href="../img/logo/file.ico" type="image/x-icon">
+  </head>
+  <!-- Body starts here -->
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          
+          <div id="collapsable-nav" class="collapse navbar-collapse">
+            <ul id="nav-list" class="nav navbar-nav navbar-right">
+              <li><a href="../../index.html">Home</a></li>
+              <li><a href="pizza.html">Pizza</a></li>
+              <li><a href="bakery.html">Bakery</a></li>
+              <li><a href="rest.html">Restaurant</a></li>
+              <li><a href="bar.html">Bar</a></li>
+              <li><a href="tel:4707741985" class="order-button">Order</a></li>
+            </ul><!-- #nav-list -->
+          </div><!-- .collapse .navbar-collapse -->
+        </div><!-- .container -->
+      </nav>
+    </header>
+
+    <main class="container" style="margin-top: 60px;">
+      <h1 class="text-center">Bar Menu</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Cocktails</h2>
+          <ul class="list-unstyled">
+            <li>
+              <h4>Margarita <span class="price">$10</span></h4>
+              <p>Tequila, lime juice, triple sec, salt on the rim.</p>
+            </li>
+            <li>
+              <h4>Mojito <span class="price">$9</span></h4>
+              <p>White rum, sugar, lime juice, soda water, mint.</p>
+            </li>
+            <li>
+              <h4>Old Fashioned <span class="price">$12</span></h4>
+              <p>Bourbon, sugar, Angostura bitters, orange twist.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>Beers</h2>
+          <ul class="list-unstyled">
+            <li>
+              <h4>IPA <span class="price">$6</span></h4>
+              <p>A hoppy beer style within the broader category of pale ale.</p>
+            </li>
+            <li>
+              <h4>Lager <span class="price">$5</span></h4>
+              <p>A type of beer conditioned at low temperatures.</p>
+            </li>
+            <li>
+              <h4>Stout <span class="price">$7</span></h4>
+              <p>A dark, top-fermented beer with a number of variations.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Wines</h2>
+          <ul class="list-unstyled">
+            <li>
+              <h4>Cabernet Sauvignon <span class="price">$8</span></h4>
+              <p>A full-bodied red wine with dark fruit flavors.</p>
+            </li>
+            <li>
+              <h4>Chardonnay <span class="price">$7</span></h4>
+              <p>A popular white wine with flavors of apple and citrus.</p>
+            </li>
+            <li>
+              <h4>Pinot Noir <span class="price">$9</span></h4>
+              <p>A light-bodied red wine with red fruit flavors.</p>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h2>Non-Alcoholic</h2>
+          <ul class="list-unstyled">
+            <li>
+              <h4>Virgin Mojito <span class="price">$5</span></h4>
+              <p>Soda water, lime juice, mint, sugar.</p>
+            </li>
+            <li>
+              <h4>Fresh Lemonade <span class="price">$4</span></h4>
+              <p>Lemon juice, water, sugar, ice.</p>
+            </li>
+            <li>
+              <h4>Soft Drinks <span class="price">$3</span></h4>
+              <p>Choose from a variety of sodas.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+    <!-- JS plugins and scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="../js/ajax-utils.js"></script>
+    <script src="../js/index.js"></script>
+  </body>
+</html>
