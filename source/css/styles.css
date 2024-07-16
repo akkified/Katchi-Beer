@@ -67,24 +67,36 @@ header {
     display: flex;
 }
 
+#offer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background-color: #a63027;
+}
+
 #announce-cont {
     height: 260px;
-    width: 50%;
+    width: 90%; /* Adjust width for better responsiveness */
     margin: auto;
     background-color: #fedd65f0;
     align-items: center;
     display: flex;
     position: relative;
+    border: 5px solid yellow; /* Add this line to bring back the yellow border */
 }
 
 .announce {
     height: 245px;
-    width: 95%;
+    width: 100%; /* Adjust width for better responsiveness */
     margin: auto;
     background-color: rgb(255, 255, 255);
     align-items: center;
     display: flex;
+    overflow: hidden; /* Ensure overflow is hidden */
 }
+
 
 .megaphone {
     position: absolute;
@@ -106,15 +118,6 @@ header {
     color: red;
     font-size: 20px;
     font-weight: bolder;
-}
-
-#offer {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    background-color: #a63027;
 }
 
 #desc {
