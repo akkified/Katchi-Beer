@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       // Send email using EmailJS
       emailjs.send("service_0xmz5on", "template_qy687qv", { // Replace with your EmailJS service ID and template ID
-        order_details: orderDetails,
+        message: orderDetails,
         customer_email: customerEmail
       }).then(function (response) {
         console.log("SUCCESS!", response.status, response.text);
