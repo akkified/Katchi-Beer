@@ -11,13 +11,12 @@
     <!-- icon/logo -->
     <link rel="icon" href="../img/logo/file.ico" type="image/x-icon">
     <!-- Latest EmailJS script -->
-    <script src="../js/email.min.js"></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
         emailjs.init("h0Qm_szLqUH-fYTHT"); // Replace with your EmailJS public key
-        console.log("EmailJS initialized");
-      });
-    </script>
+      })();
+    </script>    
   </head>
   <body>
     <header>

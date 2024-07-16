@@ -38,20 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Function to send email using EmailJS
   function sendEmail(orderDetails, customerEmail) {
-    emailjs.send("service_0xmz5on", "template_qy687qv", {
+    const serviceID = 'service_0xmz5on';
+    const templateID = 'template_qy687qv';
+    
+    const templateParams = {
       to_email: "restaurant_owner_email@example.com", // Replace with the restaurant owner's email
       customer_email: customerEmail,
       message: orderDetails
-    })
-    .then(function(response) {
-      console.log('SUCCESS!', response.status, response.text);
-      alert('Order sent successfully');
-      localStorage.removeItem("cart");
-      renderCartItems();
-    }, function(error) {
-      console.log('FAILED...', error);
-      alert('Failed to send order');
-    });
+    };
+
+    emailjs.send(serviceID, templateID, templateParams)
+      .then(function(response) {
+        console.log('SUCCESS!', response.status, response.text);
+        alert('Order sent successfully');
+        localStorage.removeItem("cart");
+        renderCartItems();
+      }, function(error) {
+        console.log('FAILED...', error);
+        alert('Failed to send order');
+      });
   }
 
   // Event listener for the submit order button
