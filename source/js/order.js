@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     try {
       // Initialize EmailJS with your public key
-      emailjs.init("Jld43u3O0_1OeCh29"); // Replace with your EmailJS public key
+      emailjs.init("h0Qm_szLqUH-fYTHT"); // Replace with your EmailJS public key
       console.log("EmailJS initialized");
 
       // Send email using EmailJS
