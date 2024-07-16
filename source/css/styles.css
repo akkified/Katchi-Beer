@@ -78,13 +78,13 @@ header {
 
 #announce-cont {
     height: 260px;
-    width: 90%; /* Adjust width for better responsiveness */
+    width: 50%; /* Adjust width for better responsiveness */
     margin: auto;
     background-color: #fedd65f0;
     align-items: center;
     display: flex;
     position: relative;
-    border: 5px solid yellow; /* Add this line to bring back the yellow border */
+    border: 5px solid #fedd65f0; /* Add this line to bring back the yellow border */
 }
 
 .announce {
