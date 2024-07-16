@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartItemsContainer = document.getElementById("cart-items");
   const submitOrderButton = document.getElementById("submit-order");
   const orderForm = document.getElementById("order-form");
-  const customerEmailInput = document.getElementById("customer-email");
 
   // Function to render cart items
   function renderCartItems() {
@@ -36,49 +35,47 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Function to send email using EmailJS
-  function sendEmail(orderDetails, customerEmail) {
-    const serviceID = 'service_0xmz5on';
-    const templateID = 'template_qy687qv';
-    
-    const templateParams = {
-      customer_email: customerEmail,
-      message: orderDetails
-    };
-
-    emailjs.send(serviceID, templateID, templateParams)
-      .then(function(response) {
-        console.log('SUCCESS!', response.status, response.text);
-        alert('Order sent successfully');
-        localStorage.removeItem("cart");
-        renderCartItems();
-      }, function(error) {
-        console.log('FAILED...', error);
-        alert('Failed to send order');
-      });
-  }
-
-  // Event listener for the submit order button
+  // Event listener for submit order button
   submitOrderButton.addEventListener("click", function () {
-    const customerEmail = customerEmailInput.value.trim();
+    const orderDetails = cart.map(item => `${item.name} x ${item.quantity}`).join(", ");
+    const customerEmail = document.getElementById("customer-email").value;
+
+    if (!orderDetails) {
+      alert("Your cart is empty!");
+      return;
+    }
+
     if (!customerEmail) {
-      alert('Please enter your email address');
+      alert("Please enter your email address.");
       return;
     }
 
-    if (cart.length === 0) {
-      alert('Your cart is empty');
-      return;
+    try {
+      // Initialize EmailJS with your user ID
+      emailjs.init("h0Qm_szLqUH-fYTHT"); // Replace with your EmailJS public key
+      console.log("EmailJS initialized");
+
+      // Send email using EmailJS
+      emailjs.send("service_0xmz5on", "template_qy687qv", { // Replace with your EmailJS service ID and template ID
+        order_details: orderDetails,
+        customer_email: customerEmail
+      }).then(function (response) {
+        console.log("SUCCESS!", response.status, response.text);
+        alert("Order submitted successfully!");
+        // Clear the cart
+        localStorage.removeItem("cart");
+        cart = [];
+        renderCartItems();
+        orderForm.reset();
+      }, function (error) {
+        console.error("FAILED...", error);
+        alert("Failed to submit order. See console for details.");
+      });
+    } catch (e) {
+      console.error("EmailJS Initialization Error", e);
     }
-
-    let orderDetails = "Order Details:\n\n";
-    cart.forEach(item => {
-      orderDetails += `${item.name} - ${item.price} x ${item.quantity}\n`;
-    });
-
-    sendEmail(orderDetails, customerEmail);
   });
 
-  // Initial rendering of cart items
+  // Initial render of cart items
   renderCartItems();
 });
