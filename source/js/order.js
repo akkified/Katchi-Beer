@@ -42,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const templateID = 'template_qy687qv';
     
     const templateParams = {
-      to_email: "restaurant_owner_email@example.com", // Replace with the restaurant owner's email
       customer_email: customerEmail,
       message: orderDetails
     };
